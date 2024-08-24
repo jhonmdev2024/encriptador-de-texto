@@ -211,6 +211,10 @@ body{
         align-items: center;
     }
 
+    .btn__encriptar, .btn__desencriptar{
+        width: 75%;
+    }
+
     .contenedor__destino{
         width: 60%;
     }
