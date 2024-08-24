@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con el navegador Internet Explorer y Edge-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="encabezado">
+        <!-- <nav class="encabezado__menu"> -->
+            <!-- <a href="index.html"><img class="encabezado__logo__alura" src="./assets/logo-aluraLatam.png" alt="logo de alura Latam"></a> -->
+            <a class="encabezado__titulo" href="index.html">
+                Encriptador de Texto
+            </a>
+        <!-- </nav> -->
+    </header>
+    <main class="contenedor">
+        <section class="contenedor__origen">
+            <textarea class="textArea__origen" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="contenedor__origen__advertencia">
+                <img class="icono__origen__advertencia" src="assets/icono-de-advertencia.png" alt="icono de advertencia">
+                <p class="texto__origen__advertencia">Ingrese solo letras minúsculas, sin tildes, ni caracteres especiales.</p>
+            </div>
+            <div class="contenedor__origen__botones">
+                <button class="btn__encriptar" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btn__desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="contenedor__destino">
+            <textarea class="textArea__destino" readonly></textarea>
+            <p class="texto__destino__advertencia">Ningún mensaje fue encontrado</p>
+            <div class="contenedor__destino__botones">
+                <button class="btn__copiar" onclick="btnCopiar()" >Copiar</button>
+            </div>            
+         </section>
+    </main>
+    <footer class="pie-de-pagina">
+        <p>Jhon Moncada © - Todos los derechos reservados (2024)</p>
+    </footer>    
+    <script src="app.js"></script>
+</body>
+</html>
