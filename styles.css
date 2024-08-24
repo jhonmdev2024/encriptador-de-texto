@@ -203,6 +203,10 @@ body{
         width: 60%;
     }
 
+    .textArea__origen{
+        width: 90%;
+    }
+
     .contenedor__origen__botones{
         flex-direction: column;
         align-items: center;
